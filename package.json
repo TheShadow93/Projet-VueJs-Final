@@ -1,46 +1,29 @@
 {
-  "name": "projetfinal",
-  "version": "0.1.0",
-  "private": true,
+  "name": "ynov_node_test2",
+  "version": "1.0.0",
+  "description": "Ynov nodejs second test project",
+  "main": "launch.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "prestart": "./config/init.config.js",
+    "start": "ntl",
+    "run": "nodemon launch.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aspirecya/ynov_nodejs2.git"
+  },
+  "author": "Wassim MATOUGUI, Sumeet SINGH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aspirecya/ynov_nodejs2/issues"
+  },
+  "homepage": "https://github.com/aspirecya/ynov_nodejs2#readme",
   "dependencies": {
-    "vue": "^2.6.6"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mkdirp": "^0.5.1",
+    "mongoose": "^5.4.4",
+    "nodemon": "^1.18.9",
+    "ntl": "^3.0.0"
+  }
 }
